@@ -1,0 +1,270 @@
+/* Day Pharma V30 — square imagery, interactive three-image carousels and molecule scene. */
+
+/* 1. Photography should feel architectural and editorial, not card-like. */
+img,
+.split-image,
+.split-image img,
+.gallery,
+.gallery figure,
+.gallery img,
+.service-card,
+.service-card img,
+.editorial-card,
+.editorial-card img,
+.address-card,
+.address-card img,
+.inline-photo,
+.reading-grid aside img,
+.form-layout>.copy .inline-photo,
+.ampoule-hero,
+.about-video-shell,
+.about-video-shell video {
+  border-radius: 0 !important;
+}
+
+/* Ensure wrappers do not reintroduce rounded clipping around photography. */
+.split-image,
+.gallery figure,
+.service-card,
+.editorial-card,
+.address-card,
+.about-video-shell {
+  clip-path: none !important;
+}
+
+/* 2. Any exact three-image block becomes an editorial carousel via JS. */
+.triple-image-carousel {
+  position: relative;
+  display: flex !important;
+  gap: 0 !important;
+  overflow-x: auto !important;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  overscroll-behavior-x: contain;
+  touch-action: pan-x pan-y;
+}
+.triple-image-carousel::-webkit-scrollbar { display: none; }
+.triple-image-carousel > * {
+  flex: 0 0 100% !important;
+  width: 100% !important;
+  min-width: 100% !important;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  margin: 0 !important;
+}
+.triple-image-carousel.gallery > figure img {
+  display: block;
+  width: 100%;
+  height: clamp(420px, 62vw, 720px) !important;
+  object-fit: cover;
+}
+.triple-image-carousel.gallery > figure figcaption {
+  padding: 14px 0 0;
+  font-size: .78rem;
+  color: #6b6258;
+}
+.triple-image-carousel.service-grid > .service-card {
+  min-height: clamp(520px, 68vw, 760px) !important;
+}
+.triple-image-carousel.service-grid > .service-card > img {
+  height: 100% !important;
+}
+.carousel-shell { position: relative; }
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+.carousel-button {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid #cfc6b8;
+  background: transparent;
+  color: #342d26;
+  display: grid;
+  place-items: center;
+  font: 500 1.15rem/1 var(--sans, Arial, sans-serif);
+  cursor: pointer;
+  transition: border-color .2s ease, background-color .2s ease, transform .2s ease;
+}
+.carousel-button:hover { border-color: #9d8c72; background: #f7f3ed; transform: translateY(-1px); }
+.carousel-button:disabled { opacity: .28; cursor: default; transform: none; }
+.carousel-progress {
+  margin-right: auto;
+  font-size: .7rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: #857968;
+}
+
+/* 3. About page — future institutional video. */
+.about-film {
+  padding: 0;
+  background: #f7f4ee;
+}
+.about-video-shell {
+  position: relative;
+  width: 100%;
+  height: min(82vh, 880px);
+  min-height: 520px;
+  overflow: hidden;
+  background: #e9e4db;
+}
+.about-video-shell video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  background: #e9e4db;
+}
+/* 4. Molecular interaction below the video. */
+.molecule-section {
+  position: relative;
+  min-height: 760px;
+  display: grid;
+  align-items: center;
+  overflow: hidden;
+  background: #f7f4ee;
+  border-bottom: 1px solid #ded7cc;
+}
+.molecule-layout {
+  display: grid;
+  grid-template-columns: .82fr 1.18fr;
+  align-items: center;
+  gap: clamp(40px, 7vw, 110px);
+  padding-block: clamp(90px, 11vw, 160px);
+}
+.molecule-copy { max-width: 520px; }
+.molecule-copy h2 { max-width: 11ch; margin-bottom: 24px; }
+.molecule-copy p { max-width: 46ch; }
+.molecule-hint {
+  margin-top: 26px;
+  font-size: .72rem;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: #8b7a62;
+}
+.molecule-stage {
+  position: relative;
+  width: 100%;
+  min-height: 540px;
+  display: grid;
+  place-items: center;
+  cursor: crosshair;
+}
+.molecule-stage::before {
+  content: "";
+  position: absolute;
+  width: 72%;
+  aspect-ratio: 1;
+  border: 1px solid rgba(189,157,101,.18);
+  border-radius: 50%;
+  transform: scale(.84);
+  transition: transform .8s cubic-bezier(.2,.7,.2,1), opacity .5s ease;
+}
+.molecule-svg {
+  width: min(100%, 650px);
+  overflow: visible;
+  filter: drop-shadow(0 24px 48px rgba(83,64,36,.06));
+}
+.molecule-atom,
+.molecule-bond {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition:
+    transform .78s cubic-bezier(.18,.75,.2,1),
+    opacity .48s ease,
+    stroke-width .48s ease;
+}
+.molecule-atom { fill: #c8a55f; }
+.molecule-atom.core { fill: #302b25; }
+.molecule-atom.small { fill: #efe7da; stroke: #9a835d; stroke-width: 1.4; }
+.molecule-bond { stroke: #84745d; stroke-width: 2.2; stroke-linecap: round; opacity: .75; }
+.molecule-bond.accent { stroke: #c8a55f; }
+.molecule-orbit {
+  fill: none;
+  stroke: rgba(131,112,84,.22);
+  stroke-width: 1;
+  stroke-dasharray: 7 12;
+  transform-origin: center;
+  animation: moleculeOrbit 18s linear infinite;
+}
+.molecule-group { animation: moleculeFloat 5.5s ease-in-out infinite; transform-origin: center; }
+@keyframes moleculeFloat { 0%,100%{ transform:translateY(-5px) rotate(-1deg) } 50%{ transform:translateY(7px) rotate(1.2deg) } }
+@keyframes moleculeOrbit { to { transform: rotate(360deg); } }
+
+/* The molecule literally fractures on hover/focus. */
+.molecule-stage:is(:hover,:focus-visible,.is-broken)::before { transform: scale(1.08); opacity: .35; }
+.molecule-stage:is(:hover,:focus-visible,.is-broken) .atom-a { transform: translate(-78px,-55px) scale(.86); }
+.molecule-stage:is(:hover,:focus-visible,.is-broken) .atom-b { transform: translate(88px,-38px) scale(.88); }
+.molecule-stage:is(:hover,:focus-visible,.is-broken) .atom-c { transform: translate(74px,76px) scale(.84); }
+.molecule-stage:is(:hover,:focus-visible,.is-broken) .atom-d { transform: translate(-86px,74px) scale(.88); }
+.molecule-stage:is(:hover,:focus-visible,.is-broken) .atom-e { transform: translate(0,-92px) scale(.82); }
+.molecule-stage:is(:hover,:focus-visible,.is-broken) .atom-f { transform: translate(4px,90px) scale(.82); }
+.molecule-stage:is(:hover,:focus-visible,.is-broken) .bond-a { transform: translate(-34px,-18px) rotate(-18deg); opacity:.18; }
+.molecule-stage:is(:hover,:focus-visible,.is-broken) .bond-b { transform: translate(38px,-20px) rotate(20deg); opacity:.18; }
+.molecule-stage:is(:hover,:focus-visible,.is-broken) .bond-c { transform: translate(32px,28px) rotate(-18deg); opacity:.16; }
+.molecule-stage:is(:hover,:focus-visible,.is-broken) .bond-d { transform: translate(-36px,28px) rotate(18deg); opacity:.16; }
+.molecule-stage:is(:hover,:focus-visible,.is-broken) .bond-e { transform: translateY(-36px); opacity:.12; }
+.molecule-stage:is(:hover,:focus-visible,.is-broken) .bond-f { transform: translateY(36px); opacity:.12; }
+
+@media (max-width: 900px) {
+  .molecule-layout { grid-template-columns: 1fr; }
+  .molecule-copy h2 { max-width: 16ch; }
+  .molecule-stage { min-height: 440px; }
+  .about-video-shell { min-height: 440px; height: 70svh; }
+}
+@media (max-width: 760px) {
+  .triple-image-carousel.gallery > figure img { height: 68svh !important; min-height: 420px; }
+  .triple-image-carousel.service-grid > .service-card { min-height: 66svh !important; }
+  .carousel-controls { margin-top: 14px; }
+  .carousel-button { width: 42px; height: 42px; }
+  .about-video-shell { min-height: 390px; height: 62svh; }
+  .about-video-note { left: 20px; right: 20px; bottom: 24px; }
+  .molecule-section { min-height: auto; }
+  .molecule-layout { padding-block: 74px; gap: 28px; }
+  .molecule-stage { min-height: 360px; }
+  .molecule-stage:is(:hover,:focus-visible,.is-broken) .atom-a { transform: translate(-48px,-38px) scale(.88); }
+  .molecule-stage:is(:hover,:focus-visible,.is-broken) .atom-b { transform: translate(52px,-32px) scale(.9); }
+  .molecule-stage:is(:hover,:focus-visible,.is-broken) .atom-c { transform: translate(48px,48px) scale(.88); }
+  .molecule-stage:is(:hover,:focus-visible,.is-broken) .atom-d { transform: translate(-52px,48px) scale(.9); }
+  .molecule-stage:is(:hover,:focus-visible,.is-broken) .atom-e { transform: translate(0,-56px) scale(.86); }
+  .molecule-stage:is(:hover,:focus-visible,.is-broken) .atom-f { transform: translate(0,56px) scale(.86); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .triple-image-carousel { scroll-behavior: auto; }
+  .molecule-group,.molecule-orbit { animation: none !important; }
+  .molecule-atom,.molecule-bond,.molecule-stage::before { transition: none !important; }
+}
+
+
+/* V31 — automatic 5s carousels, mouse dragging and cursor-repulsion molecule field */
+.triple-image-carousel{cursor:grab;touch-action:pan-y;overscroll-behavior-x:contain;scroll-snap-type:x mandatory}
+.triple-image-carousel.is-dragging{cursor:grabbing;scroll-behavior:auto!important;user-select:none}
+.triple-image-carousel.is-dragging img{pointer-events:none}
+.carousel-controls{grid-template-columns:auto minmax(80px,1fr) auto auto;align-items:center}
+.carousel-timer{height:1px;background:#d9d3c8;overflow:hidden;min-width:80px;max-width:180px}
+.carousel-timer i{display:block;height:100%;width:100%;transform-origin:left;background:#8c7a5d;animation:carouselCountdown 5s linear forwards}
+@keyframes carouselCountdown{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.carousel-button:disabled{opacity:1;cursor:pointer}
+.molecule-field{position:relative;min-height:620px;background:#f6f3ed;overflow:hidden;cursor:crosshair;border:0;outline:none}
+.molecule-field:focus-visible{box-shadow:inset 0 0 0 1px #a99a82}
+.molecule-canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.molecule-cursor-label{position:absolute;left:28px;bottom:24px;font-size:.65rem;letter-spacing:.14em;text-transform:uppercase;color:#7c756a;opacity:.72;pointer-events:none}
+.molecule-stage::before,.molecule-orbit,.molecule-svg{display:none!important}
+@media(max-width:1024px){.molecule-field{min-height:520px}}
+@media(max-width:760px){.molecule-field{min-height:430px}.molecule-cursor-label{left:18px;bottom:18px}.carousel-controls{grid-template-columns:auto 1fr auto auto}.carousel-timer{max-width:none}}
+@media(prefers-reduced-motion:reduce){.carousel-timer{display:none}.molecule-cursor-label{display:none}}
+
+
+/* V35.1 — institutional video becomes the first fold of A Day Pharma */
+.about-film--hero{height:100vh;height:100svh;min-height:560px;margin:0;padding:0;overflow:hidden;background:#111}
+.about-film--hero .about-video-shell{width:100%;height:100%;margin:0;max-width:none}
+.about-film--hero video{display:block;width:100%;height:100%;object-fit:cover;object-position:center;border-radius:0}
+.about-film--hero + .page-hero{padding-top:72px!important}
+@media(max-width:760px){.about-film--hero{min-height:500px}.about-film--hero + .page-hero{padding-top:52px!important}}

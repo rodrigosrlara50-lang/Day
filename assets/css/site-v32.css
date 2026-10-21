@@ -1,0 +1,208 @@
+/* Day Pharma V32 — stronger prescriber focus + restrained interactive motion. */
+.prescriber-link--primary{
+  display:inline-flex!important;align-items:center;justify-content:center;gap:9px;
+  min-height:42px;padding:11px 18px;border:1px solid #b99654;
+  background:#b99654;color:#17130d!important;font-size:.76rem;font-weight:650;
+  letter-spacing:.015em;white-space:nowrap;transition:background-color .22s ease,color .22s ease,transform .22s ease,border-color .22s ease;
+}
+.prescriber-link--primary:hover{background:#16130f;color:#fff!important;border-color:#16130f;transform:translateY(-1px)}
+.desktop-nav>a,.nav-dropdown>summary{position:relative}
+.desktop-nav>a::after,.nav-dropdown>summary::after{content:"";position:absolute;left:0;right:100%;bottom:-8px;height:1px;background:#9c7b42;transition:right .28s cubic-bezier(.2,.7,.2,1)}
+.desktop-nav>a:hover::after,.desktop-nav>a[aria-current="page"]::after,.nav-dropdown>summary:hover::after{right:0}
+.mobile-prescriber-cta{margin-top:10px!important;padding:15px 18px!important;background:#b99654!important;color:#17130d!important;font-weight:650!important;display:flex!important;justify-content:space-between!important;align-items:center!important}
+.footer-service{justify-content:flex-start!important}
+.footer-service:has(>p:only-child){display:block}
+
+/* Serious, low-amplitude motion: content becomes responsive without looking playful. */
+.js-v32 .v32-reveal{opacity:0;transform:translate3d(0,22px,0);transition:opacity .7s cubic-bezier(.2,.72,.2,1),transform .7s cubic-bezier(.2,.72,.2,1);transition-delay:var(--v32-delay,0ms)}
+.js-v32 .v32-reveal.is-visible{opacity:1;transform:none}
+.js-v32 .v32-hover-image{overflow:hidden}
+.js-v32 .v32-hover-image img{transition:transform .75s cubic-bezier(.2,.72,.2,1),filter .5s ease;will-change:transform}
+@media(hover:hover) and (pointer:fine){.js-v32 .v32-hover-image:hover img{transform:scale(1.025)}.service-card,.editorial-card,.testimonial-card,.info-card{transition:transform .3s ease,border-color .3s ease}.service-card:hover,.editorial-card:hover,.testimonial-card:hover,.info-card:hover{transform:translateY(-4px)}}
+.text-link,.footer-grid a,.footer-service a{transition:color .2s ease,opacity .2s ease}
+.button{transition:transform .22s ease,background-color .22s ease,color .22s ease,border-color .22s ease}
+.button:hover{transform:translateY(-1px)}
+
+/* Interactive gold rule under major headings. */
+.section-head h2,.copy h2,.page-hero h1,.statement h1{position:relative}
+.js-v32 .v32-heading-accent::after{content:"";display:block;width:0;height:1px;background:#b99654;margin-top:18px;transition:width .8s cubic-bezier(.2,.72,.2,1)}
+.js-v32 .v32-heading-accent.is-visible::after{width:clamp(42px,5vw,72px)}
+
+@media(max-width:1260px){.prescriber-link--primary{display:inline-flex!important;padding:10px 14px;font-size:.7rem}.header-actions{gap:10px}.brand{flex-basis:150px}.brand img{width:150px}.desktop-nav{gap:13px}}
+@media(max-width:1024px){.prescriber-link--primary{display:none!important}}
+@media(prefers-reduced-motion:reduce){.js-v32 .v32-reveal{opacity:1!important;transform:none!important;transition:none!important}.js-v32 .v32-heading-accent::after{width:54px!important;transition:none!important}.js-v32 .v32-hover-image img,.button,.service-card,.editorial-card,.testimonial-card,.info-card{transition:none!important}}
+
+
+/* Day Pharma V34.3 — compact header + ticker below header on scroll */
+:root{--delivery-ticker-h:34px;--header-compact:88px}
+.site-header{height:var(--header-compact)!important;top:0!important;transition:height .24s ease,box-shadow .24s ease,border-color .24s ease}
+.header-inner{height:100%!important}
+.brand{flex-basis:170px!important}
+.brand img{width:170px!important;height:auto!important;max-height:48px!important}
+.desktop-nav>a,.nav-dropdown>summary{padding:16px 0!important}
+.prescriber-link--primary{min-height:40px!important;padding:10px 17px!important}
+.mobile-menu{top:var(--header-compact)!important}
+.menu-backdrop{inset:var(--header-compact) 0 0!important}
+
+.delivery-ticker{position:fixed;top:var(--header-compact);left:0;right:0;height:var(--delivery-ticker-h);z-index:995;overflow:hidden;background:#171716;color:#f8f4ed;border-top:1px solid rgba(201,169,97,.16);border-bottom:1px solid rgba(201,169,97,.28);display:flex;align-items:center;transform:translateY(calc(-100% - 2px));opacity:0;visibility:hidden;pointer-events:none;transition:transform .26s ease,opacity .2s ease,visibility 0s linear .26s}
+.delivery-ticker__track{display:flex;width:max-content;will-change:transform;animation:deliveryTicker 26s linear infinite}
+.delivery-ticker__group{display:flex;align-items:center;flex-shrink:0;white-space:nowrap}
+.delivery-ticker__item{display:inline-flex;align-items:center;gap:9px;padding:0 28px;font:500 10.5px/1.2 Manrope,Inter,sans-serif;letter-spacing:.075em;text-transform:uppercase}
+.delivery-ticker__icon{width:18px;height:18px;display:inline-flex;align-items:center;justify-content:center;color:#c9a961;flex:0 0 auto}
+.delivery-ticker__icon svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:1.55;stroke-linecap:round;stroke-linejoin:round}
+.delivery-ticker__icon--moto{width:21px}
+.delivery-ticker__sep{width:3px;height:3px;border-radius:50%;background:#c9a961;opacity:.65;margin:0 4px}
+body{padding-top:0!important;transition:padding-top .26s ease}
+body.has-delivery-ticker{padding-top:var(--delivery-ticker-h)!important}
+body.has-delivery-ticker .delivery-ticker{transform:translateY(0);opacity:1;visibility:visible;pointer-events:auto;transition:transform .26s ease,opacity .2s ease}
+@keyframes deliveryTicker{from{transform:translateX(0)}to{transform:translateX(calc(-1 * var(--ticker-loop-distance, 50%)))}}
+
+/* Align page offset with the smaller header. */
+.page-hero{padding-top:calc(var(--header-compact) + 58px)!important}
+.film-hero+.page-hero{padding-top:76px!important}
+
+@media(max-width:1024px){
+  :root{--header-compact:80px}
+  .brand{flex-basis:158px!important}.brand img{width:158px!important;max-height:44px!important}
+  .mobile-menu{top:var(--header-compact)!important}.menu-backdrop{inset:var(--header-compact) 0 0!important}
+}
+@media(max-width:760px){
+  :root{--delivery-ticker-h:32px;--header-compact:72px}
+  .brand{flex-basis:142px!important}.brand img{width:142px!important;max-height:40px!important}
+  .delivery-ticker__item{font-size:9px;letter-spacing:.05em;padding:0 20px;gap:7px}
+  .delivery-ticker__icon{width:16px;height:16px}.delivery-ticker__icon--moto{width:19px}
+  .delivery-ticker__track{animation-duration:23s}
+  .page-hero{padding-top:calc(var(--header-compact) + 34px)!important}
+}
+@media(prefers-reduced-motion:reduce){
+  .delivery-ticker,.site-header,body{transition:none!important}
+  .delivery-ticker__track{animation:none}.delivery-ticker{overflow-x:auto}.delivery-ticker__group[aria-hidden="true"]{display:none}
+}
+
+/* Day Pharma V34.4 — cleaner page heroes without explanatory copy */
+.page-hero .hero-grid{grid-template-columns:1fr!important;max-width:980px}
+.page-hero .hero-grid>div{max-width:980px}
+
+
+/* V35.2 — transparent navigation over video hero */
+.video-hero-page .site-header{
+  background:transparent!important;
+  border-bottom-color:transparent!important;
+  box-shadow:none!important;
+  backdrop-filter:none!important;
+}
+.video-hero-page:not(.has-delivery-ticker) .site-header .desktop-nav>a,
+.video-hero-page:not(.has-delivery-ticker) .site-header .nav-dropdown>summary{
+  color:#fff!important;
+  text-shadow:0 1px 14px rgba(0,0,0,.38);
+}
+.video-hero-page:not(.has-delivery-ticker) .site-header .desktop-nav>a::after,
+.video-hero-page:not(.has-delivery-ticker) .site-header .nav-dropdown>summary::after{
+  background:#d8b76f!important;
+}
+.video-hero-page:not(.has-delivery-ticker) .site-header .prescriber-link--primary{
+  background:rgba(185,150,84,.94)!important;
+  color:#17130d!important;
+  border-color:rgba(213,183,122,.95)!important;
+  box-shadow:0 8px 30px rgba(0,0,0,.12);
+}
+.video-hero-page:not(.has-delivery-ticker) .site-header .menu-toggle span{background:#fff!important}
+.video-hero-page.has-delivery-ticker .site-header{
+  background:rgba(247,245,241,.97)!important;
+  border-bottom-color:rgba(40,40,37,.16)!important;
+  backdrop-filter:blur(16px)!important;
+}
+.video-hero-page.has-delivery-ticker .site-header .desktop-nav>a,
+.video-hero-page.has-delivery-ticker .site-header .nav-dropdown>summary{color:#524b40!important;text-shadow:none}
+.video-hero-page.has-delivery-ticker .site-header .menu-toggle span{background:#514636!important}
+.video-hero-page .about-film--hero{margin-top:0!important}
+@media(max-width:1024px){
+  .video-hero-page:not(.has-delivery-ticker) .site-header{background:linear-gradient(to bottom,rgba(0,0,0,.28),rgba(0,0,0,0))!important}
+}
+
+
+/* V35.5 FINAL — Área do prescritor sem retângulo em todo o site */
+.prescriber-link--primary,
+.prescriber-link--primary:hover,
+.site-header .prescriber-link--primary,
+.site-header .prescriber-link--primary:hover,
+.video-hero-page .site-header .prescriber-link--primary,
+.video-hero-page .site-header .prescriber-link--primary:hover,
+.video-hero-page.has-delivery-ticker .site-header .prescriber-link--primary,
+.video-hero-page.header-after-video .site-header .prescriber-link--primary {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 8px 0 !important;
+  min-height: auto !important;
+  border-radius: 0 !important;
+}
+.site-header .prescriber-link--primary { color:#8b6b32 !important; }
+.video-hero-page:not(.header-after-video) .site-header .prescriber-link--primary { color:#fff !important; text-shadow:0 2px 14px rgba(0,0,0,.58) !important; }
+
+/* V35.6 — header branco e mais compacto em todo o site */
+:root{--header-compact:70px}
+.site-header,
+.video-hero-page .site-header,
+.video-hero-page:not(.has-delivery-ticker) .site-header,
+.video-hero-page.has-delivery-ticker .site-header,
+.video-hero-page.header-after-video .site-header{
+  height:var(--header-compact)!important;
+  top:0!important;
+  background:#f7f5f1!important;
+  background-color:#f7f5f1!important;
+  background-image:none!important;
+  border-bottom:1px solid rgba(40,40,37,.12)!important;
+  box-shadow:none!important;
+  backdrop-filter:none!important;
+}
+.header-inner{height:100%!important;gap:20px!important}
+.brand{flex-basis:145px!important}
+.brand img{width:145px!important;height:auto!important;max-height:40px!important}
+.desktop-nav{gap:20px!important}
+.desktop-nav>a,.nav-dropdown>summary,
+.video-hero-page:not(.has-delivery-ticker) .site-header .desktop-nav>a,
+.video-hero-page:not(.has-delivery-ticker) .site-header .nav-dropdown>summary,
+.video-hero-page.has-delivery-ticker .site-header .desktop-nav>a,
+.video-hero-page.has-delivery-ticker .site-header .nav-dropdown>summary{
+  color:#4d473f!important;
+  text-shadow:none!important;
+  padding:12px 0!important;
+}
+.site-header .menu-toggle span,
+.video-hero-page:not(.has-delivery-ticker) .site-header .menu-toggle span,
+.video-hero-page.has-delivery-ticker .site-header .menu-toggle span{background:#514636!important}
+.prescriber-link--primary,
+.prescriber-link--primary:hover,
+.site-header .prescriber-link--primary,
+.site-header .prescriber-link--primary:hover,
+.video-hero-page .site-header .prescriber-link--primary,
+.video-hero-page .site-header .prescriber-link--primary:hover,
+.video-hero-page:not(.header-after-video) .site-header .prescriber-link--primary{
+  background:transparent!important;
+  background-color:transparent!important;
+  background-image:none!important;
+  border:0!important;
+  box-shadow:none!important;
+  color:#8b6b32!important;
+  text-shadow:none!important;
+  padding:6px 0!important;
+  min-height:auto!important;
+}
+.delivery-ticker{top:var(--header-compact)!important}
+.mobile-menu{top:var(--header-compact)!important}
+.menu-backdrop{inset:var(--header-compact) 0 0!important}
+.page-hero{padding-top:calc(var(--header-compact) + 48px)!important}
+.video-hero-page .about-film--hero{margin-top:var(--header-compact)!important}
+.video-hero-page .about-film--hero{height:calc(100svh - var(--header-compact))!important;min-height:520px}
+@media(max-width:1024px){
+  :root{--header-compact:66px}
+  .brand{flex-basis:136px!important}.brand img{width:136px!important;max-height:37px!important}
+}
+@media(max-width:760px){
+  :root{--header-compact:62px}
+  .brand{flex-basis:128px!important}.brand img{width:128px!important;max-height:34px!important}
+  .header-inner{gap:12px!important}
+}

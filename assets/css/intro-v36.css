@@ -1,0 +1,10 @@
+/* Day Pharma V36.1 — video intro */
+.site-intro{position:fixed;inset:0;z-index:99999;background:#f8f4ed;overflow:hidden;display:block;isolation:isolate}
+.site-intro[hidden]{display:none!important}
+.site-intro__video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;background:#f8f4ed}
+.site-intro__skip{position:absolute;right:24px;bottom:22px;z-index:3;border:0;background:rgba(248,244,237,.78);color:#171716;font:600 11px/1 Manrope,Inter,sans-serif;letter-spacing:.12em;text-transform:uppercase;padding:10px 13px;cursor:pointer;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.site-intro.is-ending{opacity:0;transition:opacity .42s ease}
+.site-intro.is-done{pointer-events:none;visibility:hidden;opacity:0}
+html.intro-active,body.intro-active{overflow:hidden}
+@media(max-width:760px){.site-intro__skip{right:16px;bottom:16px}}
+@media(prefers-reduced-motion:reduce){.site-intro{display:none!important}html.intro-active,body.intro-active{overflow:auto}}

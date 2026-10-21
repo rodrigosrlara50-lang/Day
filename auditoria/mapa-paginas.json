@@ -1,0 +1,153 @@
+[
+  {
+    "arquivo": "index.html",
+    "titulo": "Saúde personalizada",
+    "fontes": [
+      "https://www.daypharma.com.br/",
+      "https://www.daypharma.com.br/campanha/"
+    ]
+  },
+  {
+    "arquivo": "a-empresa.html",
+    "titulo": "A Day Pharma",
+    "fontes": [
+      "https://www.daypharma.com.br/",
+      "https://www.daypharma.com.br/sobre/",
+      "https://www.daypharma.com.br/campanha/"
+    ]
+  },
+  {
+    "arquivo": "areas-de-atuacao.html",
+    "titulo": "Soluções e especialidades",
+    "fontes": [
+      "https://www.daypharma.com.br/sobre/"
+    ]
+  },
+  {
+    "arquivo": "medicamentos-orais.html",
+    "titulo": "Medicamentos orais",
+    "fontes": [
+      "https://www.daypharma.com.br/sobre/",
+      "https://www.daypharma.com.br/recomendacoes/",
+      "https://www.daypharma.com.br/saches/"
+    ]
+  },
+  {
+    "arquivo": "medicamentos-injetaveis.html",
+    "titulo": "Injetáveis e estéreis",
+    "fontes": [
+      "https://www.daypharma.com.br/campanha/"
+    ]
+  },
+  {
+    "arquivo": "medicamentos-hospitalares.html",
+    "titulo": "Soluções hospitalares",
+    "fontes": [
+      "https://www.daypharma.com.br/campanha/"
+    ]
+  },
+  {
+    "arquivo": "suplementacao-esportiva.html",
+    "titulo": "Suplementação esportiva",
+    "fontes": [
+      "https://www.daypharma.com.br/suplementacao-esportiva-personalizada/"
+    ]
+  },
+  {
+    "arquivo": "manipulacao-ortomolecular.html",
+    "titulo": "Manipulação ortomolecular",
+    "fontes": [
+      "https://www.daypharma.com.br/manipulacao-ortomolecular/"
+    ]
+  },
+  {
+    "arquivo": "modulacao-hormonal.html",
+    "titulo": "Modulação hormonal",
+    "fontes": [
+      "https://www.daypharma.com.br/modulacao-hormonal/"
+    ]
+  },
+  {
+    "arquivo": "envie-sua-receita.html",
+    "titulo": "Envie sua receita",
+    "fontes": [
+      "https://www.daypharma.com.br/envie-sua-receita/",
+      "https://www.daypharma.com.br/envie-sua-receita0/"
+    ]
+  },
+  {
+    "arquivo": "profissionais.html",
+    "titulo": "Portal do profissional",
+    "fontes": [
+      "https://www.daypharma.com.br/",
+      "https://portal.daypharma.com.br/"
+    ]
+  },
+  {
+    "arquivo": "contato.html",
+    "titulo": "Contato",
+    "fontes": [
+      "https://www.daypharma.com.br/contato/",
+      "https://www.daypharma.com.br/campanha/",
+      "https://www.daypharma.com.br/politica-de-privacidade/"
+    ]
+  },
+  {
+    "arquivo": "trabalhe-conosco.html",
+    "titulo": "Trabalhe Conosco",
+    "fontes": [
+      "https://www.daypharma.com.br/trabalhe-conosco/"
+    ]
+  },
+  {
+    "arquivo": "blog.html",
+    "titulo": "Conteúdos e orientações",
+    "fontes": [
+      "https://www.daypharma.com.br/inicio-mobile/",
+      "https://www.daypharma.com.br/recomendacoes/",
+      "https://www.daypharma.com.br/saches/"
+    ]
+  },
+  {
+    "arquivo": "depoimentos.html",
+    "titulo": "Depoimentos",
+    "fontes": [
+      "https://www.daypharma.com.br/"
+    ]
+  },
+  {
+    "arquivo": "recomendacoes.html",
+    "titulo": "Cuidados com sua fórmula",
+    "fontes": [
+      "https://www.daypharma.com.br/recomendacoes/"
+    ]
+  },
+  {
+    "arquivo": "saches.html",
+    "titulo": "Fórmulas em sachê",
+    "fontes": [
+      "https://www.daypharma.com.br/saches/"
+    ]
+  },
+  {
+    "arquivo": "daily-beauty.html",
+    "titulo": "Daily Beauty",
+    "fontes": [
+      "https://www.daypharma.com.br/daily-beauty/"
+    ]
+  },
+  {
+    "arquivo": "daily-detox.html",
+    "titulo": "Daily Detox",
+    "fontes": [
+      "https://www.daypharma.com.br/daily-detox/"
+    ]
+  },
+  {
+    "arquivo": "politica-de-privacidade.html",
+    "titulo": "Privacidade e dados pessoais",
+    "fontes": [
+      "https://www.daypharma.com.br/politica-de-privacidade/"
+    ]
+  }
+]

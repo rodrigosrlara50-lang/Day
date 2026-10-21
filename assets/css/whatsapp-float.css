@@ -1,0 +1,107 @@
+/* Day Pharma V21 - accessible floating WhatsApp link.
+   Shared by all public pages. No icon fonts, widgets or external scripts. */
+.day-whatsapp-float {
+  --day-whatsapp-size: 60px;
+  --day-whatsapp-gap: 24px;
+  position: fixed;
+  right: var(--day-whatsapp-gap);
+  bottom: var(--day-whatsapp-gap);
+  right: calc(var(--day-whatsapp-gap) + env(safe-area-inset-right, 0px));
+  bottom: calc(var(--day-whatsapp-gap) + env(safe-area-inset-bottom, 0px));
+  z-index: 900;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: var(--day-whatsapp-size);
+  height: var(--day-whatsapp-size);
+  padding: 0;
+  margin: 0;
+  border: 1px solid rgba(255, 255, 255, .5);
+  border-radius: 50%;
+  background: #25d366;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(16, 71, 42, .24), 0 2px 6px rgba(16, 71, 42, .12);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  isolation: isolate;
+  transition: transform .2s ease, background-color .2s ease, box-shadow .2s ease;
+}
+.day-whatsapp-float:visited { color: #fff; }
+.day-whatsapp-float__icon {
+  display: block;
+  width: 33px;
+  height: 33px;
+  flex: 0 0 33px;
+  color: #fff;
+  fill: currentColor;
+  pointer-events: none;
+}
+.day-whatsapp-float__tooltip {
+  position: absolute;
+  top: 50%;
+  right: calc(100% + 12px);
+  transform: translate(5px, -50%);
+  width: max-content;
+  max-width: calc(100vw - 112px);
+  padding: 10px 14px;
+  border: 1px solid #e6dfd1;
+  border-radius: 10px;
+  background: #fffdf8;
+  color: #38352f;
+  box-shadow: 0 5px 20px rgba(56, 49, 36, .1);
+  font-family:'Manrope','Inter',Arial,sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: normal;
+  line-height: 1.45;
+  text-align: left;
+  text-transform: none;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity .2s ease, transform .2s ease, visibility .2s ease;
+}
+.day-whatsapp-float:focus-visible {
+  outline: 3px solid #0b5e35;
+  outline-offset: 4px;
+}
+.day-whatsapp-float:focus-visible .day-whatsapp-float__tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, -50%);
+}
+@media (hover: hover) and (pointer: fine) {
+  .day-whatsapp-float:hover {
+    background: #1ebe5d;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba(16, 71, 42, .28), 0 2px 8px rgba(16, 71, 42, .12);
+  }
+  .day-whatsapp-float:hover .day-whatsapp-float__tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, -50%);
+  }
+}
+.day-whatsapp-float:active { transform: scale(.96); }
+@media (max-width: 640px) {
+  .day-whatsapp-float {
+    --day-whatsapp-size: 56px;
+    --day-whatsapp-gap: 18px;
+  }
+  .day-whatsapp-float__icon { width: 30px; height: 30px; flex-basis: 30px; }
+}
+/* Keep the full-screen mobile navigation unobstructed. */
+body.menu-open .day-whatsapp-float { visibility: hidden; pointer-events: none; }
+body:has(.v16-mobile-menu.open) .day-whatsapp-float { visibility: hidden; pointer-events: none; }
+@media (prefers-reduced-motion: reduce) {
+  .day-whatsapp-float,
+  .day-whatsapp-float__tooltip { transition: none; }
+  .day-whatsapp-float:hover,
+  .day-whatsapp-float:active { transform: none; }
+}
+@media print { .day-whatsapp-float { display: none; } }

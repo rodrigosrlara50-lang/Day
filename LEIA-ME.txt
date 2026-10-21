@@ -1,0 +1,70 @@
+DAY PHARMA | V25 | AMPOLAS COMPONDO A ARTE
+
+COMO ABRIR
+1. Extraia o ZIP inteiro em uma NOVA pasta.
+2. Abra a pasta DayPharma_v25_Ampolas_Composicao.
+3. Abra index.html no Chrome, Edge, Firefox ou Safari.
+Não abra o HTML de dentro do ZIP e não separe a pasta assets dos HTMLs.
+Esta versão é completa: não precisa de patches ou versões anteriores.
+
+O QUE FOI ENTREGUE
+20 páginas em HTML, CSS e JavaScript editáveis, com arquivos de imagem e os três vídeos locais. A base é o projeto V21; os conteúdos públicos consultados no site oficial foram reorganizados no novo visual.
+
+OS VÍDEOS
+Home, Orais e Injetáveis mantêm as versões otimizadas, sem faixa de áudio, sem textos sobrepostos e preenchendo a tela. A imagem é recortada proporcionalmente em telas diferentes, sem ser esticada.
+Alguns navegadores ou modos de economia de energia podem limitar autoplay. A imagem de abertura funciona como alternativa visual.
+
+FUNCIONAMENTO LOCAL E SERVIÇOS EXTERNOS
+Imagens, CSS, JavaScript e vídeos acompanham o pacote. As fontes externas possuem alternativas locais; a aparência da tipografia pode variar sem internet. WhatsApp, loja, portal profissional, mapas e YouTube precisam de internet e continuam nos respectivos serviços.
+Não foram incorporados arquivos de fonte ao pacote.
+
+FORMULÁRIOS
+Os formulários locais de receita, contato e currículo são PRÉVIAS. Permitem selecionar arquivos e conferir dados, mas não enviam nem armazenam solicitações em servidor enquanto as integrações estiverem vazias. Isso está informado na interface.
+Para atendimento real, use os links oficiais mantidos em cada página. No WhatsApp, o anexo deve ser enviado manualmente na conversa; não é transferido automaticamente pelo site.
+O projeto não foi publicado no domínio e não alterou o site atual.
+
+ANTES DE PUBLICAR
+Leia auditoria/PENDENCIAS-PARA-PUBLICACAO.md e auditoria/INTEGRACAO-FORMULARIOS.md.
+Há divergências no site de origem sobre datas, endereços, horários e responsável farmacêutico. A política de privacidade local é um resumo identificado como tal, com acesso ao documento publicado, e precisa de revisão.
+
+ONDE EDITAR
+Conteúdos: arquivos .html na raiz.
+Cores, layout e responsividade: assets/css/site-v22.css.
+Botão de WhatsApp: link .day-whatsapp-float em cada HTML; estilo assets/css/whatsapp-float.css.
+Configuração das integrações: assets/js/config.js.
+Interações: assets/js/site-v22.js.
+Fotos: assets/images. Vídeos: assets/videos.
+Documentação e rastreabilidade: pasta auditoria.
+
+
+ATUALIZACAO V25 - COMPOSICAO CENTRAL
+Abra medicamentos-injetaveis.html e role para baixo, depois do video e
+apresentacao inicial. Na cena central, cinco ampolas caem separadamente
+com inclinacoes sutis. Elas desaceleram e se alinham nas posicoes da
+imagem enviada. Ao terminar, a propria arte original aparece integralmente.
+A rolagem continua para as secoes seguintes. Nao ha mais ampolas na lateral
+nem elementos seguindo o visitante ate o rodape.
+
+O movimento acompanha a rolagem e faz o caminho inverso ao voltar.
+O link Continuar permite avancar diretamente ao conteudo seguinte.
+Computadores e celulares em retrato usam a animacao. Com preferencia de
+reduzir movimento, sem JavaScript, ou em telas muito baixas na horizontal,
+a imagem completa aparece estatica, sem prender a rolagem.
+
+A arte final foi salva em WebP SEM PERDAS, com os mesmos pixels do anexo.
+As camadas intermediarias sao recortes individuais otimizados. As duas
+pequenas areas antes ocultas por outras ampolas foram completadas com a
+propria ampola da foto; a composicao final e sempre o original intacto.
+Nao ha video novo, som, biblioteca de animacao remota ou loop permanente.
+
+ARQUIVOS DA ALTERACAO
+  medicamentos-injetaveis.html
+  assets/css/ampoules-composition-v25.css
+  assets/js/ampoules-composition-v25.js
+  assets/images/ampolas-composicao/
+
+O arquivo geometria.json registra as posicoes da imagem original para
+edicao; a pagina nao depende de uma requisicao a esse JSON.
+A animacao e todos os recursos necessarios estao no pacote.
+Leia auditoria/VALIDACAO-V25.md para os testes realizados.
+Todas as ressalvas anteriores sobre dados, formularios e publicacao continuam validas.

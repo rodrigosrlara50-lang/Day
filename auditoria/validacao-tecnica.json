@@ -1,0 +1,685 @@
+{
+  "method": "Rendered actual project HTML with local CSS, JS and media inlined for isolated browser QA; local references checked separately. External fonts and links excluded from network tests.",
+  "static": {
+    "errors": []
+  },
+  "browser": [
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "badImages": [],
+      "videos": [],
+      "buttons": 1,
+      "h1": "Ciência, estruturae singularidade.",
+      "file": "a-empresa.html",
+      "viewport": {
+        "width": 1440,
+        "height": 980
+      },
+      "js_errors": []
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "badImages": [],
+      "videos": [],
+      "buttons": 1,
+      "h1": "Diferentes necessidades.Cuidado individual.",
+      "file": "areas-de-atuacao.html",
+      "viewport": {
+        "width": 1440,
+        "height": 980
+      },
+      "js_errors": []
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "badImages": [],
+      "videos": [],
+      "buttons": 1,
+      "h1": "Informação que aproxima.Orientação que cuida.",
+      "file": "blog.html",
+      "viewport": {
+        "width": 1440,
+        "height": 980
+      },
+      "js_errors": []
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "badImages": [],
+      "videos": [],
+      "buttons": 1,
+      "h1": "O canal certo paracada conversa.",
+      "file": "contato.html",
+      "viewport": {
+        "width": 1440,
+        "height": 980
+      },
+      "js_errors": []
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "badImages": [],
+      "videos": [],
+      "buttons": 1,
+      "h1": "Daily Beauty.",
+      "file": "daily-beauty.html",
+      "viewport": {
+        "width": 1440,
+        "height": 980
+      },
+      "js_errors": []
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "badImages": [],
+      "videos": [],
+      "buttons": 1,
+      "h1": "Daily Detox.",
+      "file": "daily-detox.html",
+      "viewport": {
+        "width": 1440,
+        "height": 980
+      },
+      "js_errors": []
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "badImages": [],
+      "videos": [],
+      "buttons": 1,
+      "h1": "Histórias dealta performance.",
+      "file": "depoimentos.html",
+      "viewport": {
+        "width": 1440,
+        "height": 980
+      },
+      "js_errors": []
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "badImages": [],
+      "videos": [],
+      "buttons": 1,
+      "h1": "O primeiro passo é simples.O cuidado é completo.",
+      "file": "envie-sua-receita.html",
+      "viewport": {
+        "width": 1440,
+        "height": 980
+      },
+      "js_errors": []
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "badImages": [],
+      "videos": [
+        {
+          "ready": 4,
+          "muted": true,
+          "error": null,
+          "width": 1440,
+          "height": 980,
+          "fit": "cover"
+        }
+      ],
+      "buttons": 1,
+      "h1": "Uma nova escala para a saúde personalizada.",
+      "file": "index.html",
+      "viewport": {
+        "width": 1440,
+        "height": 980
+      },
+      "js_errors": []
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "badImages": [],
+      "videos": [],
+      "buttons": 1,
+      "h1": "Conhecimento e personalização.Da prescrição à fórmula.",
+      "file": "manipulacao-ortomolecular.html",
+      "viewport": {
+        "width": 1440,
+        "height": 980
+      },
+      "js_errors": []
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "badImages": [],
+      "videos": [],
+      "buttons": 1,
+      "h1": "Relacionamento institucional.Atendimento especializado.",
+      "file": "medicamentos-hospitalares.html",
+      "viewport": {
+        "width": 1440,
+        "height": 980
+      },
+      "js_errors": []
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "badImages": [],
+      "videos": [
+        {
+          "ready": 4,
+          "muted": true,
+          "error": null,
+          "width": 1440,
+          "height": 980,
+          "fit": "cover"
+        }
+      ],
+      "buttons": 1,
+      "h1": "Tecnologia, precisãoe cuidado especializado.",
+      "file": "medicamentos-injetaveis.html",
+      "viewport": {
+        "width": 1440,
+        "height": 980
+      },
+      "js_errors": []
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "badImages": [],
+      "videos": [
+        {
+          "ready": 4,
+          "muted": true,
+          "error": null,
+          "width": 1440,
+          "height": 980,
+          "fit": "cover"
+        }
+      ],
+      "buttons": 1,
+      "h1": "Personalização quecomeça na prescrição.",
+      "file": "medicamentos-orais.html",
+      "viewport": {
+        "width": 1440,
+        "height": 980
+      },
+      "js_errors": []
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "badImages": [],
+      "videos": [],
+      "buttons": 1,
+      "h1": "Responsabilidade no preparo.Individualidade no cuidado.",
+      "file": "modulacao-hormonal.html",
+      "viewport": {
+        "width": 1440,
+        "height": 980
+      },
+      "js_errors": []
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "badImages": [],
+      "videos": [],
+      "buttons": 1,
+      "h1": "Transparência sobreseus dados.",
+      "file": "politica-de-privacidade.html",
+      "viewport": {
+        "width": 1440,
+        "height": 980
+      },
+      "js_errors": []
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "badImages": [],
+      "videos": [],
+      "buttons": 1,
+      "h1": "Conhecimento que aproxima.Relacionamento que cuida.",
+      "file": "profissionais.html",
+      "viewport": {
+        "width": 1440,
+        "height": 980
+      },
+      "js_errors": []
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "badImages": [],
+      "videos": [],
+      "buttons": 1,
+      "h1": "Cuidado que continuadepois da entrega.",
+      "file": "recomendacoes.html",
+      "viewport": {
+        "width": 1440,
+        "height": 980
+      },
+      "js_errors": []
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "badImages": [],
+      "videos": [],
+      "buttons": 1,
+      "h1": "Praticidade no preparo.Atenção no uso.",
+      "file": "saches.html",
+      "viewport": {
+        "width": 1440,
+        "height": 980
+      },
+      "js_errors": []
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "badImages": [],
+      "videos": [],
+      "buttons": 1,
+      "h1": "Seu objetivo mereceatenção individual.",
+      "file": "suplementacao-esportiva.html",
+      "viewport": {
+        "width": 1440,
+        "height": 980
+      },
+      "js_errors": []
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "badImages": [],
+      "videos": [],
+      "buttons": 1,
+      "h1": "Pessoas que fazemo cuidado acontecer.",
+      "file": "trabalhe-conosco.html",
+      "viewport": {
+        "width": 1440,
+        "height": 980
+      },
+      "js_errors": []
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "badImages": [],
+      "videos": [],
+      "buttons": 1,
+      "h1": "Ciência, estruturae singularidade.",
+      "file": "a-empresa.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "js_errors": []
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "badImages": [],
+      "videos": [],
+      "buttons": 1,
+      "h1": "Diferentes necessidades.Cuidado individual.",
+      "file": "areas-de-atuacao.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "js_errors": []
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "badImages": [],
+      "videos": [],
+      "buttons": 1,
+      "h1": "Informação que aproxima.Orientação que cuida.",
+      "file": "blog.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "js_errors": []
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "badImages": [],
+      "videos": [],
+      "buttons": 1,
+      "h1": "O canal certo paracada conversa.",
+      "file": "contato.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "js_errors": []
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "badImages": [],
+      "videos": [],
+      "buttons": 1,
+      "h1": "Daily Beauty.",
+      "file": "daily-beauty.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "js_errors": []
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "badImages": [],
+      "videos": [],
+      "buttons": 1,
+      "h1": "Daily Detox.",
+      "file": "daily-detox.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "js_errors": []
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "badImages": [],
+      "videos": [],
+      "buttons": 1,
+      "h1": "Histórias dealta performance.",
+      "file": "depoimentos.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "js_errors": []
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "badImages": [],
+      "videos": [],
+      "buttons": 1,
+      "h1": "O primeiro passo é simples.O cuidado é completo.",
+      "file": "envie-sua-receita.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "js_errors": []
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "badImages": [],
+      "videos": [
+        {
+          "ready": 4,
+          "muted": true,
+          "error": null,
+          "width": 390,
+          "height": 844,
+          "fit": "cover"
+        }
+      ],
+      "buttons": 1,
+      "h1": "Uma nova escala para a saúde personalizada.",
+      "file": "index.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "js_errors": []
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "badImages": [],
+      "videos": [],
+      "buttons": 1,
+      "h1": "Conhecimento e personalização.Da prescrição à fórmula.",
+      "file": "manipulacao-ortomolecular.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "js_errors": []
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "badImages": [],
+      "videos": [],
+      "buttons": 1,
+      "h1": "Relacionamento institucional.Atendimento especializado.",
+      "file": "medicamentos-hospitalares.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "js_errors": []
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "badImages": [],
+      "videos": [
+        {
+          "ready": 4,
+          "muted": true,
+          "error": null,
+          "width": 390,
+          "height": 844,
+          "fit": "cover"
+        }
+      ],
+      "buttons": 1,
+      "h1": "Tecnologia, precisãoe cuidado especializado.",
+      "file": "medicamentos-injetaveis.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "js_errors": []
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "badImages": [],
+      "videos": [
+        {
+          "ready": 4,
+          "muted": true,
+          "error": null,
+          "width": 390,
+          "height": 844,
+          "fit": "cover"
+        }
+      ],
+      "buttons": 1,
+      "h1": "Personalização quecomeça na prescrição.",
+      "file": "medicamentos-orais.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "js_errors": []
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "badImages": [],
+      "videos": [],
+      "buttons": 1,
+      "h1": "Responsabilidade no preparo.Individualidade no cuidado.",
+      "file": "modulacao-hormonal.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "js_errors": []
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "badImages": [],
+      "videos": [],
+      "buttons": 1,
+      "h1": "Transparência sobreseus dados.",
+      "file": "politica-de-privacidade.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "js_errors": []
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "badImages": [],
+      "videos": [],
+      "buttons": 1,
+      "h1": "Conhecimento que aproxima.Relacionamento que cuida.",
+      "file": "profissionais.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "js_errors": []
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "badImages": [],
+      "videos": [],
+      "buttons": 1,
+      "h1": "Cuidado que continuadepois da entrega.",
+      "file": "recomendacoes.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "js_errors": []
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "badImages": [],
+      "videos": [],
+      "buttons": 1,
+      "h1": "Praticidade no preparo.Atenção no uso.",
+      "file": "saches.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "js_errors": []
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "badImages": [],
+      "videos": [],
+      "buttons": 1,
+      "h1": "Seu objetivo mereceatenção individual.",
+      "file": "suplementacao-esportiva.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "js_errors": []
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "badImages": [],
+      "videos": [],
+      "buttons": 1,
+      "h1": "Pessoas que fazemo cuidado acontecer.",
+      "file": "trabalhe-conosco.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "js_errors": []
+    }
+  ],
+  "interactions": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 980
+      },
+      "form_status": "Dados conferidos. Nenhuma informação ou anexo foi enviado.\nO envio direto depende da integração do novo site. Para atendimento real, use os canais oficiais indicados nesta página."
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "form_status": "Dados conferidos. Nenhuma informação ou anexo foi enviado.\nO envio direto depende da integração do novo site. Para atendimento real, use os canais oficiais indicados nesta página."
+    },
+    {
+      "mobile_menu_open": true
+    },
+    {
+      "mobile_menu_closed": true
+    }
+  ],
+  "media": [
+    {
+      "file": "orais-hero-web.mp4",
+      "bytes": 8414970,
+      "seconds": 34.466667,
+      "streams": [
+        {
+          "type": "video",
+          "codec": "h264",
+          "width": 1600,
+          "height": 680
+        }
+      ]
+    },
+    {
+      "file": "injetaveis-hero-web.mp4",
+      "bytes": 3211725,
+      "seconds": 28.666667,
+      "streams": [
+        {
+          "type": "video",
+          "codec": "h264",
+          "width": 1600,
+          "height": 680
+        }
+      ]
+    },
+    {
+      "file": "hero-video-web.mp4",
+      "bytes": 5778152,
+      "seconds": 23.633333,
+      "streams": [
+        {
+          "type": "video",
+          "codec": "h264",
+          "width": 1280,
+          "height": 720
+        }
+      ]
+    }
+  ]
+}

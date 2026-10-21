@@ -1,0 +1,385 @@
+{
+  "desktop": {
+    "errors": [],
+    "frames": [
+      {
+        "p": 0,
+        "progress": "0.0000",
+        "fullOpacity": "0",
+        "overflow": false,
+        "art": {
+          "x": 424.6875,
+          "y": 105.359375,
+          "width": 590.609375,
+          "height": 737.984375,
+          "top": 105.359375,
+          "right": 1015.296875,
+          "bottom": 843.34375,
+          "left": 424.6875
+        },
+        "transforms": [
+          "matrix(0.87462, -0.48481, 0.48481, 0.87462, 36.872, -344.487)",
+          "matrix(0.829038, 0.559193, -0.559193, 0.829038, 55.307, -456.682)",
+          "matrix(0.906308, -0.422618, 0.422618, 0.906308, 126.417, -513.043)",
+          "matrix(0.848048, 0.529919, -0.529919, 0.848048, 126.417, -604.168)",
+          "matrix(0.829038, -0.559193, 0.559193, 0.829038, 68.476, -737.433)"
+        ]
+      },
+      {
+        "p": 0.25,
+        "progress": "0.2499",
+        "fullOpacity": "0",
+        "overflow": false,
+        "art": {
+          "x": 424.6875,
+          "y": 104,
+          "width": 590.609375,
+          "height": 737.984375,
+          "top": 104,
+          "right": 1015.296875,
+          "bottom": 841.984375,
+          "left": 424.6875
+        },
+        "transforms": [
+          "matrix(0.87462, -0.48481, 0.48481, 0.87462, 36.872, -344.487)",
+          "matrix(0.829038, 0.559193, -0.559193, 0.829038, 55.307, -456.682)",
+          "matrix(0.906308, -0.422618, 0.422618, 0.906308, 126.417, -513.043)",
+          "matrix(0.904842, 0.425748, -0.425748, 0.904842, 126.417, -437.969)",
+          "matrix(0.996817, -0.0797292, 0.0797292, 0.996817, 22.005, -69.781)"
+        ]
+      },
+      {
+        "p": 0.45,
+        "progress": "0.4499",
+        "fullOpacity": "0",
+        "overflow": false,
+        "art": {
+          "x": 424.6875,
+          "y": 104,
+          "width": 590.609375,
+          "height": 737.984375,
+          "top": 104,
+          "right": 1015.296875,
+          "bottom": 841.984375,
+          "left": 424.6875
+        },
+        "transforms": [
+          "matrix(0.87462, -0.48481, 0.48481, 0.87462, 36.872, -344.487)",
+          "matrix(0.814673, 0.579921, -0.579921, 0.814673, 55.307, -425.316)",
+          "matrix(0.989305, -0.145859, 0.145859, 0.989305, 126.417, -144.936)",
+          "matrix(1, 0, 0, 1, 0, 0)",
+          "matrix(1, 0, 0, 1, 0, 0)"
+        ]
+      },
+      {
+        "p": 0.65,
+        "progress": "0.6499",
+        "fullOpacity": "0",
+        "overflow": false,
+        "art": {
+          "x": 424.6875,
+          "y": 104,
+          "width": 590.609375,
+          "height": 737.984375,
+          "top": 104,
+          "right": 1015.296875,
+          "bottom": 841.984375,
+          "left": 424.6875
+        },
+        "transforms": [
+          "matrix(0.949052, -0.315119, 0.315119, 0.949052, 36.872, -236.201)",
+          "matrix(1, -0.000523599, 0.000523599, 1, 0.938, -8.813)",
+          "matrix(1, 0, 0, 1, 0, 0)",
+          "matrix(1, 0, 0, 1, 0, 0)",
+          "matrix(1, 0, 0, 1, 0, 0)"
+        ]
+      },
+      {
+        "p": 0.84,
+        "progress": "0.8399",
+        "fullOpacity": "0",
+        "overflow": false,
+        "art": {
+          "x": 424.6875,
+          "y": 104,
+          "width": 590.609375,
+          "height": 737.984375,
+          "top": 104,
+          "right": 1015.296875,
+          "bottom": 841.984375,
+          "left": 424.6875
+        },
+        "transforms": [
+          "matrix(1, 0, 0, 1, 0, 0)",
+          "matrix(1, 0, 0, 1, 0, 0)",
+          "matrix(1, 0, 0, 1, 0, 0)",
+          "matrix(1, 0, 0, 1, 0, 0)",
+          "matrix(1, 0, 0, 1, 0, 0)"
+        ]
+      },
+      {
+        "p": 1,
+        "progress": "0.9997",
+        "fullOpacity": "1",
+        "overflow": false,
+        "art": {
+          "x": 424.6875,
+          "y": 103.359375,
+          "width": 590.609375,
+          "height": 737.984375,
+          "top": 103.359375,
+          "right": 1015.296875,
+          "bottom": 841.34375,
+          "left": 424.6875
+        },
+        "transforms": [
+          "matrix(1, 0, 0, 1, 0, 0)",
+          "matrix(1, 0, 0, 1, 0, 0)",
+          "matrix(1, 0, 0, 1, 0, 0)",
+          "matrix(1, 0, 0, 1, 0, 0)",
+          "matrix(1, 0, 0, 1, 0, 0)"
+        ]
+      }
+    ],
+    "reverse": "0.4499",
+    "skipPosition": {
+      "x": 0,
+      "y": 126.359375,
+      "width": 1440,
+      "height": 732
+    },
+    "footer": {
+      "aside": false,
+      "gutter": "page-injetaveis",
+      "storyBottom": -2649.640625,
+      "overflow": false
+    },
+    "images": []
+  },
+  "mobile": {
+    "errors": [],
+    "frames": [
+      {
+        "p": 0,
+        "progress": "0.0002",
+        "fullOpacity": "0",
+        "overflow": false,
+        "art": {
+          "x": 16,
+          "y": 215.65625,
+          "width": 358,
+          "height": 447.328125,
+          "top": 215.65625,
+          "right": 374,
+          "bottom": 662.984375,
+          "left": 16
+        },
+        "transforms": [
+          "matrix(0.87462, -0.48481, 0.48481, 0.87462, 22.335, -208.674)",
+          "matrix(0.829038, 0.559193, -0.559193, 0.829038, 33.503, -276.636)",
+          "matrix(0.906308, -0.422618, 0.422618, 0.906308, 76.578, -310.777)",
+          "matrix(0.848048, 0.529919, -0.529919, 0.848048, 76.578, -365.977)",
+          "matrix(0.829038, -0.559193, 0.559193, 0.829038, 41.48, -446.702)"
+        ]
+      },
+      {
+        "p": 0.25,
+        "progress": "0.2504",
+        "fullOpacity": "0",
+        "overflow": false,
+        "art": {
+          "x": 16,
+          "y": 214.828125,
+          "width": 358,
+          "height": 447.328125,
+          "top": 214.828125,
+          "right": 374,
+          "bottom": 662.15625,
+          "left": 16
+        },
+        "transforms": [
+          "matrix(0.87462, -0.48481, 0.48481, 0.87462, 22.335, -208.674)",
+          "matrix(0.829038, 0.559193, -0.559193, 0.829038, 33.503, -276.636)",
+          "matrix(0.906573, -0.422049, 0.422049, 0.906573, 76.578, -310.776)",
+          "matrix(0.905524, 0.424294, -0.424294, 0.905524, 76.578, -264.546)",
+          "matrix(0.996894, -0.0787549, 0.0787549, 0.996894, 12.982, -41.605)"
+        ]
+      },
+      {
+        "p": 0.45,
+        "progress": "0.4497",
+        "fullOpacity": "0",
+        "overflow": false,
+        "art": {
+          "x": 16,
+          "y": 214.828125,
+          "width": 358,
+          "height": 447.328125,
+          "top": 214.828125,
+          "right": 374,
+          "bottom": 662.15625,
+          "left": 16
+        },
+        "transforms": [
+          "matrix(0.87462, -0.48481, 0.48481, 0.87462, 22.335, -208.674)",
+          "matrix(0.814511, 0.580149, -0.580149, 0.814511, 33.503, -257.797)",
+          "matrix(0.989198, -0.146584, 0.146584, 0.989198, 76.578, -88.361)",
+          "matrix(1, 0, 0, 1, 0, 0)",
+          "matrix(1, 0, 0, 1, 0, 0)"
+        ]
+      },
+      {
+        "p": 0.65,
+        "progress": "0.6498",
+        "fullOpacity": "0",
+        "overflow": false,
+        "art": {
+          "x": 16,
+          "y": 214.828125,
+          "width": 358,
+          "height": 447.328125,
+          "top": 214.828125,
+          "right": 374,
+          "bottom": 662.15625,
+          "left": 16
+        },
+        "transforms": [
+          "matrix(0.949014, -0.315235, 0.315235, 0.949014, 22.335, -143.165)",
+          "matrix(1, -0.000506145, 0.000506145, 1, 0.573, -5.363)",
+          "matrix(1, 0, 0, 1, 0, 0)",
+          "matrix(1, 0, 0, 1, 0, 0)",
+          "matrix(1, 0, 0, 1, 0, 0)"
+        ]
+      },
+      {
+        "p": 0.84,
+        "progress": "0.8404",
+        "fullOpacity": "0",
+        "overflow": false,
+        "art": {
+          "x": 16,
+          "y": 214.828125,
+          "width": 358,
+          "height": 447.328125,
+          "top": 214.828125,
+          "right": 374,
+          "bottom": 662.15625,
+          "left": 16
+        },
+        "transforms": [
+          "matrix(1, 0, 0, 1, 0, 0)",
+          "matrix(1, 0, 0, 1, 0, 0)",
+          "matrix(1, 0, 0, 1, 0, 0)",
+          "matrix(1, 0, 0, 1, 0, 0)",
+          "matrix(1, 0, 0, 1, 0, 0)"
+        ]
+      },
+      {
+        "p": 1,
+        "progress": "1.0000",
+        "fullOpacity": "1",
+        "overflow": false,
+        "art": {
+          "x": 16,
+          "y": 214.046875,
+          "width": 358,
+          "height": 447.328125,
+          "top": 214.046875,
+          "right": 374,
+          "bottom": 661.375,
+          "left": 16
+        },
+        "transforms": [
+          "matrix(1, 0, 0, 1, 0, 0)",
+          "matrix(1, 0, 0, 1, 0, 0)",
+          "matrix(1, 0, 0, 1, 0, 0)",
+          "matrix(1, 0, 0, 1, 0, 0)",
+          "matrix(1, 0, 0, 1, 0, 0)"
+        ]
+      }
+    ],
+    "reverse": "0.4497",
+    "skipPosition": {
+      "x": 0,
+      "y": 126.21875,
+      "width": 390,
+      "height": 834.171875
+    },
+    "footer": {
+      "aside": false,
+      "gutter": "page-injetaveis",
+      "storyBottom": -3736.78125,
+      "overflow": false
+    },
+    "images": []
+  },
+  "reduced": {
+    "enabled": false,
+    "opacity": "1",
+    "overflow": false
+  },
+  "nojs": {
+    "enabled": false,
+    "opacity": "1",
+    "overflow": false
+  },
+  "landscape": {
+    "enabled": false,
+    "opacity": "1",
+    "overflow": false
+  },
+  "environment": {
+    "renderMode": "In-memory DOM with copies of local CSS, JS, images and video. System browser blocks navigation to local HTTP and file URLs. Original project has no such dependency.",
+    "directFileNavigationTested": false
+  },
+  "packageChecks": {
+    "html_pages": 20,
+    "missing_resources": [],
+    "missing_anchors": [],
+    "changed_pages": [
+      "medicamentos-injetaveis.html"
+    ],
+    "videos": [
+      {
+        "name": "hero-video-web.mp4",
+        "bytes": 5778152,
+        "unchanged": true,
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1280,
+            "height": 720
+          }
+        ]
+      },
+      {
+        "name": "injetaveis-hero-web.mp4",
+        "bytes": 3211725,
+        "unchanged": true,
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1600,
+            "height": 680
+          }
+        ]
+      },
+      {
+        "name": "orais-hero-web.mp4",
+        "bytes": 8414970,
+        "unchanged": true,
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1600,
+            "height": 680
+          }
+        ]
+      }
+    ],
+    "final_art_pixels_identical": true
+  }
+}
